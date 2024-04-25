@@ -1,4 +1,6 @@
 {
-  "hello_msg": "Hello there!",
-  "second_message": "This message will be translated!"
+  "hello_msg": "Hello",
+  "second_message": "This message will be translated!",
+  "settings": "Settings",
+  "lang_changed": "The Language has been changed succesffuly."
 }

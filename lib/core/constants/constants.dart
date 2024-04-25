@@ -13,3 +13,5 @@ const localizationsDelegates = [
   GlobalWidgetsLocalizations.delegate,
   GlobalCupertinoLocalizations.delegate,
 ];
+
+const langDropDrownEntries = ["ar", "en"];

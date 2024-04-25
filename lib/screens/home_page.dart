@@ -1,4 +1,5 @@
 import 'package:bloc_course/core/localization/app_localization.dart';
+import 'package:bloc_course/screens/settings_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -8,7 +9,19 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Hello World"),
+        title: Text("hello_msg".tr(context)),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const SettingsPage(),
+                ),
+              );
+            },
+            icon: const Icon(Icons.settings),
+          ),
+        ],
       ),
       drawer: const Drawer(),
       body: SizedBox(
@@ -31,7 +44,7 @@ class HomePage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {},
-        label: const Text("Hello there"),
+        label: Text("hello_msg".tr(context)),
       ),
     );
   }
